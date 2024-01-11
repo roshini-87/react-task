@@ -1,0 +1,42 @@
+/* weather.css */
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height of the container to the full viewport height */
+  }
+  
+  .weather label {
+    margin-bottom: 10px;
+  }
+  
+  .weather input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .weather button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .weather button:hover {
+    background-color: #010a10;
+  }
+  
+  .weather p {
+    margin-bottom: 10px;
+  }
+  
+  .weather-data {
+    margin-top: 20px;
+  }
+  
+  .weather-error {
+    color: red;
+  }
+  

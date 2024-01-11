@@ -1,0 +1,15 @@
+  .json {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .json th,
+  .json td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .json th {
+    background-color: #f2f2f2;
+  }

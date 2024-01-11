@@ -1,0 +1,183 @@
+/* styles.css */
+
+/* Styles for TableComponent */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  border: 1px solid;
+  padding: 20px; 
+}
+
+.center th, .center td {
+  border: 1px solid;
+  padding: 20px;
+}
+
+.center th {
+  background-color: #f2f2f2;
+}
+
+/* Styles for FormComponent */
+.custom-form {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.custom-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.custom-form button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-form button:hover {
+  background-color: #020c18;
+}
+/* Style for form element */
+.form-elements-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #020c18;
+}
+/* layout css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1, nav ul {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #1d6bba; /* Adjust the color as needed */
+  font-weight: bold;
+  font-size: 1em; /* Adjust the font size as needed */
+}
+
+/* addition css */
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title {
+  color: #333;
+}
+
+.input {
+  margin: 10px;
+  padding: 5px;
+}
+
+.button {
+  background-color: #c1288b;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
