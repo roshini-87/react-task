@@ -1,4 +1,24 @@
 /* styles.css */
+/* Add this to your stylesheet */
+.horizontal-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.horizontal-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-nav u {
+  text-decoration: none;
+}
+
+.horizontal-nav li:hover {
+  background-color: #ddd; /* Add a hover effect if needed */
+}
 
 /* Styles for TableComponent */
 .center {
