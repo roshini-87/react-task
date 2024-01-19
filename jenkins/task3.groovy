@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     parameters {
-        string(name: 'DYNAMIC', description: 'Enter a dynamic value')
+        string(name: 'DYNAMIC', description: 'Enter your name')
     }
 
     stages {
-        stage('Print Dynamic Value') {
+        stage('Dynamic Value') {
             steps {
                 script {
-                    echo "Dynamic Value: ${params.DYNAMIC}"
+                    echo "Hi, ${params.DYNAMIC}!"
                 }
             }
         }

@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const Loginpage = ({ onLogin }) => {
@@ -91,7 +91,7 @@ const Loginpage = ({ onLogin }) => {
       <button type="button" onClick={handleLogin}>
         Login
       </button>
-      <Link to="/signuppage">Signup</Link>
+      {/* <Link to="/signuppage">Signup</Link> */}
     </div>
   );
 };
