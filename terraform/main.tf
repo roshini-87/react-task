@@ -3,23 +3,49 @@ provider "google" {
   project     = "task-data-404610"
   region      = "us-central1"
 }
-
+# 1st Create Bucket
 resource "google_storage_bucket" "example_bucket" {
-  name     = "roshini1234"
-  location = "US"
+  name          = "task-roshini"
+  location      = "US"
+  force_destroy = true
 }
-
+# 2nd Create State file Bucket
+terraform {
+  backend "gcs" {
+    bucket  = "task-roshini"
+    prefix  = "demo"
+  }
+}
+# 3rd Depends on Modules
 resource "google_storage_bucket_object" "example_object" {
-  name   = "file.txt"  # Name of the object in the bucket
-  bucket = google_storage_bucket.example_bucket.name
-
-  source = "C:/Users/HI/Desktop/statefile/file.txt"  
+  name      = "file.txt"
+  bucket    = google_storage_bucket.example_bucket.name
+  source    = "C:/Users/HI/Desktop/statefile/file.txt"
   depends_on = [google_storage_bucket.example_bucket]
 }
 
-# terraform {
-#   backend "gcs" {
-#     bucket = "roshini1234"
-#     prefix = "roshini"
-#   }
-# }
+# 4 Try static and dynamic values passing for the variables that will be used by the resource during creationtime.
+variable "bucket_name" {
+  type    = string
+  default = "task-roshini"
+}
+# 4
+variable "bucket_location" {
+  type    = string
+  default = "US"
+}
+#5. Print the output of a resource which you have created.
+output "bucket_url" {
+  value = google_storage_bucket.example_bucket.url
+}
+output "bucket_name" {
+  value = google_storage_bucket.example_bucket.name
+}
+
+output "object_name" {
+  value = google_storage_bucket_object.example_object.name
+}
+
+
+
+
